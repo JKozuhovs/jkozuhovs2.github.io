@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="the-whole-thing">
+        <div id="calendar">
+            <div id="days-names">
+                <div class="day-name">Mon</div>
+                <div class="day-name">Tue</div>
+                <div class="day-name">Wed</div>
+                <div class="day-name">Thru</div>
+                <div class="day-name">Fri</div>
+                <div class="day-name">Sat</div>
+                <div class="day-name">Sun</div>
+            </div>
+            <div id="days">
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <button onclick="clicked(01)" class="day"><div class="time">1</div><div class="buttonContainer" id="button1"></div></button>
+
+                <button onclick="clicked(02)" class="day"><div class="time">2</div><div class="buttonContainer" id="button2"></div></button>
+            
+            
+
+                <button onclick="clicked(03)" class="day"><div class="time">3</div><div class="buttonContainer" id="button3"></div></button>
+                <button onclick="clicked(04)" class="day"><div class="time">4</div><div class="buttonContainer" id="button4"></div></button>
+                <button onclick="clicked(05)" class="day"><div class="time">5</div><div class="buttonContainer" id="button5"></div></button>
+                <button onclick="clicked(06)" class="day"><div class="time">6</div><div class="buttonContainer" id="button6"></div></button>
+                <button onclick="clicked(07)" class="day"><div class="time">7</div><div class="buttonContainer" id="button7"></div></button>
+                <button onclick="clicked(08)" class="day"><div class="time">8</div><div class="buttonContainer" id="button8"></div></button>
+
+            
+                <button onclick="clicked(09)" class="day"><div class="time">9</div><div class="buttonContainer" id="button9"></div></button>
+                <button onclick="clicked(10)" class="day"><div class="time">10</div><div class="buttonContainer" id="button10"></div></button>
+                <button onclick="clicked(11)" class="day"><div class="time">11</div><div class="buttonContainer" id="button11"></div></button>
+                <button onclick="clicked(12)" class="day"><div class="time">12</div><div class="buttonContainer" id="button12"></div></button>
+                <button onclick="clicked(13)" class="day"><div class="time">13</div><div class="buttonContainer" id="button13"></div></button>
+                <button onclick="clicked(14)" class="day"><div class="time">14</div><div class="buttonContainer" id="button14"></div></button>
+                <button onclick="clicked(15)" class="day"><div class="time">15</div><div class="buttonContainer" id="button15"></div></button>
+            
+            
+                <button onclick="clicked(16)" class="day"><div class="time">16</div><div class="buttonContainer" id="button16"></div></button>
+                <button onclick="clicked(17)" class="day"><div class="time">17</div><div class="buttonContainer" id="button17"></div></button>
+                <button onclick="clicked(18)" class="day"><div class="time">18</div><div class="buttonContainer" id="button18"></div></button>
+                <button onclick="clicked(19)" class="day"><div class="time">19</div><div class="buttonContainer" id="button19"></div></button>
+                <button onclick="clicked(20)" class="day"><div class="time">20</div><div class="buttonContainer" id="button20"></div></button>
+                <button onclick="clicked(21)" class="day"><div class="time">21</div><div class="buttonContainer" id="button21"></div></button>
+                <button onclick="clicked(22)" class="day"><div class="time">22</div><div class="buttonContainer" id="button22"></div></button>
+        
+                <button onclick="clicked(23)" class="day"><div class="time">23</div><div class="buttonContainer" id="button23"></div></button>
+                <button onclick="clicked(24)" class="day"><div class="time">24</div><div class="buttonContainer" id="button24"></div></button>
+                <button onclick="clicked(25)" class="day"><div class="time">25</div><div class="buttonContainer" id="button25"></div></button>
+                <button onclick="clicked(26)" class="day"><div class="time">26</div><div class="buttonContainer" id="button26"></div></button>
+                <button onclick="clicked(27)" class="day"><div class="time">27</div><div class="buttonContainer" id="button27"></div></button>
+                <button onclick="clicked(28)" class="day"><div class="time">28</div><div class="buttonContainer" id="button28"></div></button>
+                <button onclick="clicked(29)" class="day"><div class="time">29</div><div class="buttonContainer" id="button29"></div></button>
+        
+                <button onclick="clicked(30)" class="day"><div class="time">30</div><div class="buttonContainer" id="button30"></div></button>
+                <button onclick="clicked(31)" class="day"><div class="time">31</div><div class="buttonContainer" id="button31"></div></button>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+            </div>
+        </div>
+        <div id="side-panel">
+            <div id="top-side"> <!--TOP SIDE PANEL START ---------------->
+                <div class="inputFields"> <!--Task name-->
+                    <div class="topNames">Task:</div>
+                    <textarea id="taskName" style="resize: none; height: 30px; width: 90%;" type="textarea" placeholder="Enter the task" required></textarea>
+                </div>
+                <div class="inputFields"> <!--Task description-->
+                    <div class="topNames">Description:</div>
+                    <textarea id="taskDescription" style="resize: none; height: 50px; width: 90%" type="textarea" placeholder="Enter the description" required></textarea>
+                </div>
+                <div class="inputFields"> <!--Task time-->
+                    <div class="topNames">Time:</div>
+                    <input id="taskTime" type="time">
+                </div>
+
+                <button id="save_button" onclick="save_pressed()">Press me to hide this!</button>
+            </div> <!--TOP SIDE PANEL END -------------------->
+            
+            <div id="first-bottom-side"><!--FIRST BOTTOM SIDE PANEL START ---------------->
+                <div id="showDate"></div>
+                <div class="task-container">
+                    
+                </div>
+
+            </div>
+            <div id="second-bottom-side"><!--SECOND BOTTOM SIDE PANEL START ---------------->
+                <div class="outputFields">
+                    <div class="bottomNames">Task:</div>
+                    <div id="outputTask"></div>
+                </div>
+                <div class="outputFields">
+                    <div class="bottomNames">Description:</div>
+                    <div id="outputDescription"></div>
+                </div>
+                <div class="outputFields">
+                    <div class="bottomNames">Time:</div>
+                    <div id="outputTime"></div>
+                </div>
+                <div id="sidebarButtonContainer">
+                    <button class="sidebarButton" id="backButton">BACK</button>
+                    <button class="sidebarButton" id="editButton">EDIT</button>
+                    <button class="sidebarButton" id="deleteButton">DELETE</button>
+                </div>
+            </div><!--SECOND SIDE PANEL END ---------------->
+            <div id="third-bottom-side"><!--THIRD SIDE PANEL START-->
+                <div class="outputFields">
+                    <div class="bottomNames">Task:</div>
+                    <textarea id="taskName2" style="resize: none; height: 30px; width: 90%;" type="textarea" placeholder="Enter the task" required></textarea>
+                </div>
+                <div class="outputFields">
+                    <div class="bottomNames">Description:</div>
+                    <textarea id="taskDescription2" style="resize: none; height: 50px; width: 90%" type="textarea" placeholder="Enter the description" required></textarea>
+                </div>
+                <div class="outputFields">
+                    <div class="bottomNames">Time:</div>
+                    <input id="taskTime2" type="time">
+                </div>
+                <div id="sidebarButtonContainer">
+                    <button class="sidebarButton" id="backButton2">BACK</button>
+                    <button class="sidebarButton" id="saveButton">SAVE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sampleTaskContainer" class="sidePanelTaskContainer">
+        <button id="sampleTask" type="button" class="sidePanelTask">
+            <div class="spTaskDesk">
+                <div class="spTask">Go to the GYM!</div>
+                <div class="spDesc">To get that sexy 6-pack</div>
+            </div>
+            <div class="spTaskTime">23:01</div>
+        </button>
+        <button class="delTask"><img class="delTaskImage" src="https://pic.onlinewebfonts.com/svg/img_216917.png"/></button>
+    </div>
+
+    <div class="taskInsideContainer">
+        <div class="taskInside">Test</div>
+        <div class="timeInside">02:30</div>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>

@@ -1,0 +1,240 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.day-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: 	#F28C28;
+}
+#calendar{
+    width: 71vw;
+    height: 48vw;
+    background-color: #222021;
+    padding: 0px 5vw 5vw 5vw;
+}
+#days-names{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 100px;
+}
+#days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.day{
+    border: 1px solid white;
+    height: 7vw;
+    position: relative;
+    display: flex;
+    background-color: #222021;
+    color: white;
+    text-align: left;
+    width: 10.5vw;
+}
+.day_space{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: scroll;
+   
+}
+.buttonContainer::-webkit-scrollbar {
+    display: none;
+  }
+.task-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.time{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+#the-whole-thing{
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+    width: 100%;
+}
+.topNames, .bottomNames{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.bottomNames{
+
+}
+#side-panel{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+#top-side{
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    border-top: 1px solid black;
+}
+#first-bottom-side{
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+#second-bottom-side{
+    
+}
+#third-bottom-side{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+#first-bottom-side, #second-bottom-side, #third-bottom-side{
+    border-top: 1px solid black;
+    position: absolute;
+    top: 20vw;
+    padding: 2vw 0 0 1vw;
+    width: 100%;
+}
+.task-container{ /*just the actual container for all the side panel tasks*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 25vw;
+    padding-left: 1.5vw;
+    padding-top: 1vw;
+    overflow-y: scroll;
+}
+.sidePanelTaskContainer{/*outer container for a single task*/
+    width: 99%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background-color: -webkit-focus-ring-color;
+    border-radius: 5px;
+}
+.sidePanelTask{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.spTaskDesk{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding: 0;
+}
+.spTask{
+    flex: 1s;
+    font-size: 1vw;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0;
+}
+.spDesc{
+    flex: 1;
+    font-size: 0.74vw;
+    height: 20px;
+    color: darkgrey; 
+    overflow: hidden;
+    text-align: left;
+    z-index: 3;
+    padding: 0;
+}
+.spTaskTime{
+    width: 20%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.delTask{
+    
+    margin: 0;
+    height: 100%;
+    padding: 1.5vw 5px 1.5vw 5px;
+}
+.delTaskImage{
+    height: 20px;
+}
+
+.inputFields{
+    margin-bottom: 10px;
+}
+
+.task{
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.outputFields{
+    margin-bottom: 10px;
+}
+
+#sampleTaskContainer{
+    visibility: hidden;
+}
+
+.taskInsideContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.taskInside{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 7vw;
+    color: white;
+}
+.timeInside{
+    width: 2.1vw;
+    padding-right: 2px;
+    color: #F28C28;
+}
+.buttonContainer{
+    overflow: scroll;
+    height: 100%;
+}
+#sidebarButtonContainer{
+    width: 100%;
+    display: flex;
+    padding: 0 20px 0 20px;
+}
+.sidebarButton{
+    flex: 1;
+    height: 1.8vw;
+}
+#dot{
+    color: #F28C28;
+}
+#showDate{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
